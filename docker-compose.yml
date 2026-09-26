@@ -1,0 +1,5 @@
+services:
+
+  ubuntu-very-base:
+    image: mwaeckerlin/ubuntu-very-base
+    build: .

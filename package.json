@@ -1,0 +1,11 @@
+{
+  "name": "@mwaeckerlin/ubuntu-very-base",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "docker compose build",
+    "test": "npm run test:docs && npm run test:config",
+    "test:docs": "bash tests/docs-contract.sh",
+    "test:config": "npm run build && bash tests/config-contract.sh mwaeckerlin/ubuntu-very-base",
+    "deploy": "docker compose push"
+  }
+}
